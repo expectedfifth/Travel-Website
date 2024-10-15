@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toursim</title>
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <section id="main">
+    <div class="container">
+        <nav>
+        <img src="Logo 3.png" alt="" class="logo-img">
+        <ul class="nav-list"> 
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">More Information</a></li>
+    </ul> 
+    <img src="Menu_Btn_2-removebg-preview.png" alt="" class="menu-btn">
+        </nav>
+
+        <div class="main-content">
+        <h1 class="intro-heading">We all Love Travel</h1>
+        <h1 class="main-heading">Tourism</h1>
+        
+    </div>
+
+    </div>
+ </section>
+        <section id="services">
+           <div class="container">
+            <div class="section-title">
+                <h1>Top Attractions</h1>
+                <div class="line"></div>
+            </div>
+            <div class="services">
+            <div class="service">
+            <img src="Paris Image.jpg" alt="">
+            <h3>Europe</h3>
+            <p>Explore the beauty and wonders in Europe.
+                 Whether you're exploring charming villages, indulging in world-class cuisine, or immersing yourself in its artistic heritage, France promises an unforgettable journey through Europe
+                </p>
+            </div>  
+            <div class="service">
+                <img src="Japan image.jpg" alt="">
+                <h3>Asia</h3>
+                <p>Explore the beauty and wonders in Asia.
+                     Whether you're exploring charming villages, indulging in world-class cuisine, or immersing yourself in its artistic heritage, Asia promises an unforgettable journey through Europe
+                    </p>
+                </div>  
+                <div class="service">
+                    <img src="capetown-2295679_1280.jpg" alt="">
+                    <h3>Africa</h3>
+                    <p>Explore the beauty and wonders in Africa.
+                         Whether you're exploring charming villages, indulging in world-class cuisine, or immersing yourself in its artistic heritage, Africa promises an unforgettable journey through Europe
+                        </p>
+                    </div> 
+            </div>
+            </div>
+        </section>
+
+        <section id="testimonial">
+            <div class="container">
+                <h1>Booking</h1>
+                <img src="Travel Booking.png" alt="">
+                <a href="https://www.education.govt.nz/school/health-safety-and-wellbeing/school-trips-overseas-and-exchanges/" target="_blank" class="link-button">Learn More About School Trips</a>
+            </div>
+            </div>
+        </section>
+
+       <section id="about-us">
+        <div class="container">
+            <div class="about-content">
+                <h4>About Us</h4>
+                <h1>This website can take you around the world, to your dream destination in a blink of an eye. Come experience this with us. 
+                </h1>
+        
+                <button class="btn btn-primary">Let's talk Now</button>
+            </div>
+            <div class="about-image">
+                <img src="passport.jpg" alt="">
+            </div>
+          </div>
+       </section> 
+
+       <section id="questions">
+        <div class="container">
+            <h1>QUESTIONS?</h1>
+            <p>Whether you're curious about features, a 
+                free trial, or even press, we're here to answer any questions</p>
+               <button class="btn btn-primary">Let's Talk Now</button>
+        </div>
+       </section>
+    
+
+       <footer>
+        <div class="container">
+            <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Booking</a></li>
+            <li><a href="#">More Information</a></li>
+        </ul>
+        <img src="Logo 3.png" alt="" class="footerLogo">
+        <p>Love World, Love Travel</p>
+        </div>
+       </footer>
+
+       <script>
+        const navBtn = document.querySelector('.menu-btn')
+        const navList = document.querySelector('.nav-list')
+
+        navBtn.addEventListener('click', function(){
+            navList.classList.toggle("active");
+        })
+        
+        document.querySelectorAll('.nav-list a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+       
+       </script>
+      
+    
+      
+</body> 
+</html>
